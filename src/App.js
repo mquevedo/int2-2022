@@ -1,11 +1,25 @@
-import './App.css';
-import NavBar from './components/NavBar';
+import "./App.css";
+import {
+  Navbar,
+  Internships,
+  BeInt2,
+  OurStory,
+  Alumni,
+  Apply,
+  Footer,
+} from "./components";
 
 function App() {
   return (
-    <div className="App">
-      <NavBar />
-    </div>
+    <>
+      <Navbar />
+      <Internships />
+      <BeInt2 />
+      <OurStory />
+      <Alumni />
+      <Apply />
+      <Footer />
+    </>
   );
 }
 
