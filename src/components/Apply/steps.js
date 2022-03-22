@@ -1,26 +1,22 @@
 export const steps = [
   {
     name: "Step 1",
-    description: "Here will go step 1",
+    description: "Apply to the Internship.",
   },
   {
     name: "Step 2",
-    description: "Here will go step 2",
+    description: "Round of Interviews.",
   },
   {
     name: "Step 3",
-    description: "Here will go step 3",
+    description: "Acceptance and travel arrangements.",
   },
   {
     name: "Step 4",
-    description: "Here will go step 3",
+    description: "Training in US company during a year.",
   },
   {
     name: "Step 5",
-    description: "Here will go step 3",
-  },
-  {
-    name: "Step 6",
-    description: "Here will go step 3",
+    description: "Return to your country of origin.",
   },
 ];
