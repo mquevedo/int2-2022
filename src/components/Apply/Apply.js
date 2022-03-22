@@ -16,7 +16,6 @@ const useStyles = makeStyles((theme) =>({
   },
 
   container2: {
-    backgroundColor: "rgba(0, 255, 133, 0.08)",
     display: "flex",
     flexDirection: "column",
     height: "20rem",
