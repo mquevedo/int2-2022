@@ -50,66 +50,73 @@ export const Footer = () => {
   const classes = useStyles();
 
   return (
-    <Box sx={{ flexGrow: 1 }}>
+    <Box
+      sx={{
+        display: "flex",
+        flexDirection: "column",
+        justifyContent: "center",
+        alignItems: "center",
+        marginTop: "2em",
+      }}
+    >
       <Grid
+        sx={{ width: "50% !important", marginBottom: "2em" }}
         container
-        sx={{ padding: "5em", paddingRight: "20em", paddingLeft: "20em" }}
-        spacing={{ xs: 2, md: 3 }}
+        spacing={{ xs: 2, md: 6 }}
         columns={{ xs: 4, sm: 8, md: 12 }}
         rowSpacing={4}
       >
-        <Grid item xs={2} sm={4} md={4}>
+        <Grid item xs={4} sm={8} md={6}>
           <Item image={KorinverLogo} />
         </Grid>
 
-        <Grid item xs={2} sm={4} md={4}>
+        <Grid item xs={4} sm={8} md={6}>
           <Item image={GenUILogo} />
         </Grid>
+      </Grid>
 
-        <Grid item xs={2} sm={4} md={4}>
-          <Item image={IbesLogo} />
-        </Grid>
-
-        <Grid item xs={2} sm={8} md={12}>
+      <Grid
+        sx={{ width: "50% !important", marginBottom: "2em" }}
+        container
+        spacing={{ xs: 2, md: 6 }}
+        columns={{ xs: 4, sm: 8, md: 12 }}
+        rowSpacing={4}
+      >
+        <Grid item xs={4} sm={8} md={12}>
           <Typography className={classes.titleText}>
             Friends who make this possible:
           </Typography>
         </Grid>
+      </Grid>
 
-        <Grid item xs={2} sm={4} md={4}>
+      <Grid
+        sx={{ width: "50% !important", marginBottom: "2em" }}
+        container
+        spacing={{ xs: 2, md: 6 }}
+        columns={{ xs: 4, sm: 6, md: 12 }}
+        rowSpacing={4}
+      >
+        <Grid item xs={4} sm={3} md={4}>
           <Item image={EmbassyLogo} />
         </Grid>
 
-        <Grid item xs={2} sm={4} md={4}>
+        <Grid item xs={4} sm={3} md={4}>
           <Item image={EducationUSALogo} />
         </Grid>
 
-        <Grid item xs={2} sm={4} md={4}>
+        <Grid item xs={4} sm={3} md={4}>
           <Item image={SaspLogo} />
         </Grid>
       </Grid>
 
       <Grid
+        sx={{ width: "50% !important", marginBottom: "2em" }}
         container
-        sx={{
-          padding: "5em",
-          paddingRight: "20em",
-          paddingLeft: "28em",
-          display: "flex",
-          justifyContent: "space-between",
-          alignItems: "center",
-        }}
-        spacing={{ xs: 2, md: 3 }}
+        spacing={{ xs: 2, md: 6 }}
         columns={{ xs: 4, sm: 8, md: 12 }}
         rowSpacing={4}
       >
-        <Grid
-          sx={{ display: "flex", flexDirection: "column" }}
-          item
-          xs={2}
-          sm={4}
-          md={6}
-        >
+        <Grid item xs={4} sm={8} md={6}>
           <Typography className={classes.locationText}>
             Korinver El Salvador
           </Typography>
@@ -124,36 +131,28 @@ export const Footer = () => {
           </Typography>
         </Grid>
 
-        <Grid
-          sx={{ display: "flex", flexDirection: "column" }}
-          item
-          xs={2}
-          sm={4}
-          md={6}
-        >
-          <Typography className={classes.locationText}>
-            Korinver El Salvador
+        <Grid item xs={4} sm={8} md={6}>
+          <Typography className={classes.locationText}>Branch USA</Typography>
+          <Typography className={classes.addressText}>
+            3417 Evaston Ave N, Suite #529
           </Typography>
           <Typography className={classes.addressText}>
-            Zona Franca Santa Tecla Local 2B2
+            Seattle WA 98103, USA
           </Typography>
           <Typography className={classes.addressText}>
-            Santa Tecla, La Libertad, El Salvador
-          </Typography>
-          <Typography className={classes.addressText}>
-            +(503) 2252-0014
+            +1-(2O6) 539-0034
           </Typography>
         </Grid>
       </Grid>
 
       <Grid
-        fluid
         sx={{
           display: "flex",
           justifyContent: "center",
           alignItems: "center",
           backgroundColor: "rgb(0, 52, 100)",
           height: "4em",
+          width: "100vw",
         }}
       >
         <Typography sx={{ color: "white" }}>

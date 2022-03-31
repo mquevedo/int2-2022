@@ -20,7 +20,7 @@ const Item = styled(Paper)((props) => ({
   },
 }));
 
-const useStyles = makeStyles((theme) => ({
+const useStyles = makeStyles({
   overlay: {
     width: "100%",
     height: "100%",
@@ -46,13 +46,14 @@ const useStyles = makeStyles((theme) => ({
     color: "black",
     textTransform: "uppercase",
   },
-}));
+});
 
 export const Alumni = () => {
   const classes = useStyles();
 
   return (
     <Grid
+      id="alumni"
       sx={{
         display: "flex",
         flexDirection: "column",

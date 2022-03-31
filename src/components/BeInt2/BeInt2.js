@@ -66,7 +66,7 @@ export const BeInt2 = () => {
   const classes = useStyles();
 
   return (
-    <Grid className={classes.container}>
+    <Grid id="beint2" className={classes.container}>
       <div className={classes.bgImage} />
       <Card classes={{ root: classes.card }}>
         <CardContent className={classes.content}>

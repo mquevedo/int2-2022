@@ -61,7 +61,7 @@ export const Internships = () => {
   const classes = useStyles();
 
   return (
-    <Grid className={classes.container}>
+    <Grid className={classes.container} id="internships">
       <div className={classes.bgImage} />
       <Card classes={{ root: classes.card }}>
         <CardContent sx={{ textAlign: "center" }}>
@@ -71,8 +71,10 @@ export const Internships = () => {
           <Typography className={classes.subText} gutterBottom>
             A pool of world class software developers and innovation leaders
           </Typography>
-          <Button disabled classes={{ disabled: classes.button }}>
-            Get More Information
+          <Button onClick={() =>
+            (window.location.href = "https://www.facebook.com/korinver")
+          }  className={classes.button } >
+            Ask to get More Information
           </Button>
         </CardContent>
       </Card>
