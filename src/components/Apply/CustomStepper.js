@@ -1,4 +1,10 @@
 import { useState } from "react";
+import Timeline from '@mui/lab/Timeline';
+import TimelineItem from '@mui/lab/TimelineItem';
+import TimelineSeparator from '@mui/lab/TimelineSeparator';
+import TimelineConnector from '@mui/lab/TimelineConnector';
+import TimelineContent from '@mui/lab/TimelineContent';
+import TimelineDot from '@mui/lab/TimelineDot';
 import {
   Box,
   Stepper,
@@ -23,42 +29,28 @@ export const CustomStepper = () => {
   };
 
   return (
-    <Box sx={{ maxWidth: 400 }}>
-      <Stepper activeStep={activeStep} orientation="vertical">
+    <Box sx={{  maxWidth: 900, justifyContent: "center",
+    position: "relative", flexDirection: 'row', }}>
+      <Stepper sx={{
+          display: { xs: "none", md: "flex" },
+        }} activeStep={5} alternativeLabel display="flex">
+        {steps.map((step, index) => (
+          <Step key={index}>
+            <StepLabel>
+              {step.description}
+            </StepLabel>
+          </Step>
+        ))}
+      </Stepper>
+
+      <Stepper sx={{
+          display: { xs: "flex", md: "none" },
+        }} activeStep={5}  display="flex" orientation="vertical">
         {steps.map((step, index) => (
           <Step key={step.label}>
-            <StepLabel
-              optional={
-                index === steps.length - 1 ? (
-                  <Typography variant="caption">Last step</Typography>
-                ) : null
-              }
-            >
-              {step.label}
+            <StepLabel>
+              {step.description}
             </StepLabel>
-            <StepContent>
-              <Typography>{step.description}</Typography>
-              <Box sx={{ mb: 2 }}>
-                <div>
-                  {index !== steps.length - 1 && (
-                    <Button
-                      variant="contained"
-                      onClick={handleNext}
-                      sx={{ mt: 1, mr: 1 }}
-                    >
-                      Continue
-                    </Button>
-                  )}
-                  <Button
-                    disabled={index === 0}
-                    onClick={handleBack}
-                    sx={{ mt: 1, mr: 1 }}
-                  >
-                    Back
-                  </Button>
-                </div>
-              </Box>
-            </StepContent>
           </Step>
         ))}
       </Stepper>

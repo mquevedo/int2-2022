@@ -1,47 +1,34 @@
-import { Grid, Card, CardContent,Typography } from "@mui/material";
+import { Grid, Typography } from "@mui/material";
 import { makeStyles } from "@material-ui/core";
+import {
+  Facebook as FacebookIcon,
+  LinkedIn as LinkedInIcon,
+} from "@mui/icons-material";
 
 import { CustomStepper } from "./CustomStepper";
-import { CenterFocusStrong } from "@mui/icons-material";
 
-const useStyles = makeStyles((theme) =>({
+const useStyles = makeStyles({
   container: {
     backgroundColor: "rgba(0, 255, 133, 0.08)",
-    padding: "5em",
     display: "flex",
+    paddingTop:"5em",
+    paddingBottom:"5em",
     flexDirection: "column",
+    alignContent: "center",
     justifyContent: "center",
     alignItems: "center",
+    boxSizing: "border-box",
     gap: "3em",
   },
 
-  container2: {
-    display: "flex",
-    flexDirection: "column",
-    height: "20rem",
-    gap: "3em",
-    alignItems: "center",
-    position: "relative",
-    justifyContent: "center",
-    marginTop: "-4em",
-  },
-
-  card: { 
+  textContainer: {
     display: "flex",
     justifyContent: "center",
-    alignItems: "center",
-    backgroundColor: "transparent",
-    boxShadow: "none",
-  },
-  content: {
-    maxWidth: "50%",
-    display: "flex",
+    minWidth: "10em",
+    boxSizing: "border-box",
     flexDirection: "column",
-    gap: "2em",
-    [theme.breakpoints.down("sm")]: {
-      maxWidth: "100%",
-    },
-    textAlign: "center",
+    alignItems: "center",
+    alignContent: "center",
   },
 
   titleText: {
@@ -51,6 +38,7 @@ const useStyles = makeStyles((theme) =>({
     lineHeight: "48px",
     color: "black",
     textTransform: "uppercase",
+    textAlign: "center",
   },
 
   subtitleText: {
@@ -61,44 +49,68 @@ const useStyles = makeStyles((theme) =>({
     color: "black",
     textTransform: "uppercase",
   },
+
   subText: {
     fontStyle: "normal",
     fontWeight: 400,
     fontSize: "1rem",
     lineHeight: "30px",
     color: "black",
+    maxWidth: "50%",
   },
 
-  stepperContainer: {
+  informationContainer: {
     display: "flex",
     justifyContent: "center",
     alignItems: "center",
+    flexDirection: "column",
+    textAlign: "center",
   },
-}));
+
+  socialContainer: {
+    display: "flex",
+    gap: "1em",
+  },
+
+  customStepperContainer: {
+    padding: "3em",
+  },
+});
 
 export const Apply = () => {
   const classes = useStyles();
 
   return (
-    <Grid container className={classes.container}>
-      <Grid item>
+    <Grid id="apply" container className={classes.container}>
+      <Grid className={classes.textContainer} item>
         <Typography className={classes.titleText}>The Experience</Typography>
       </Grid>
-      <Grid className={classes.stepperContainer} item>
-        <CustomStepper />
+      <Grid  className={classes.customStepperContainer}>
+        <CustomStepper/>
       </Grid>
-      <Grid className={classes.container2}>
-      <Card classes={{ root: classes.card }}>
-        <CardContent className={classes.content}>
-          <Typography className={classes.subtitleText} gutterBottom>
-          Information to apply
-          </Typography>
-          <Typography className={classes.subText} gutterBottom>
-          Opportunities will be published in Social Media. Like our pages to get timely information
-In there you will find instructions on how and when to apply
-          </Typography>
-        </CardContent>
-      </Card>
+      <Grid container className={classes.informationContainer}>
+        <Typography className={classes.subtitleText}>
+          Information To Apply
+        </Typography>
+        <Typography className={classes.subText}>
+          Opportunities will be published in Social Media. Like our pages to get
+          timely information In there you will find instructions on how and when
+          to apply
+        </Typography>
+      </Grid>
+      <Grid className={classes.socialContainer}>
+        <FacebookIcon
+          onClick={() =>
+            (window.location.href = "https://www.facebook.com/korinver")
+          }
+          sx={{ color: "#3b5998", cursor: "pointer" }}
+        />
+        <LinkedInIcon
+          onClick={() =>
+            (window.location.href = "https://www.linkedin.com/company/korinver")
+          }
+          sx={{ color: "#0072b1", cursor: "pointer" }}
+        />
       </Grid>
     </Grid>
   );

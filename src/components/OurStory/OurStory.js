@@ -1,7 +1,8 @@
-import { Chrono } from "react-chrono";
+import { Timeline } from "react-responsive-timeline";
 import { Box, Container, Card, CardContent, Typography } from "@mui/material";
 import { makeStyles } from "@material-ui/core";
 import { items } from "./timelineItems";
+import "./styles.css";
 
 const useStyles = makeStyles((theme) => ({
   titleText: {
@@ -25,18 +26,29 @@ const useStyles = makeStyles((theme) => ({
     flexDirection: "column",
     width: "100vw",
     height: "50em",
-    gap: "10em",
+    gap: "3em",
     [theme.breakpoints.down("sm")]: {
       maxWidth: "100%",
     },
     textAlign: "center",
+  },
+
+  timeline: {
+    maxLines: 2,
+    length: "10px",
+    maxWidth: "100px",
+    wrap:"nowrap",
+    spacing:2,
+    div: {
+      border: "10px solid black !important",
+    },
   },
 }));
 
 export const OurStory = () => {
   const classes = useStyles();
   return (
-    <>
+    <div id="ourStory">
       <Box
         sx={{
           display: { xs: "none", md: "flex" },
@@ -45,13 +57,22 @@ export const OurStory = () => {
           position: "relative",
         }}
       >
-        <Container item>
+        <Container>
           <Card classes={{ root: classes.card }}>
             <CardContent className={classes.content}>
               <Typography className={classes.titleText} gutterBottom>
                 Our Story
               </Typography>
-              <Chrono items={items} mode="HORIZONTAL" />
+              <Timeline
+                pivot="horizontal"
+                direction="center"
+                tooltip={true}
+                textLimit="none"
+                msLineBreak ={true}
+                maxLines = {2}
+                className={classes.timeline}
+                timelines={items}
+              />
             </CardContent>
           </Card>
         </Container>
@@ -62,17 +83,24 @@ export const OurStory = () => {
           display: { xs: "flex", md: "none" },
         }}
       >
-        <Container item>
+        <Container>
           <Card classes={{ root: classes.card }}>
             <CardContent className={classes.content}>
               <Typography className={classes.titleText} gutterBottom>
                 Our Story
               </Typography>
-              <Chrono items={items} mode="VERTICAL_ALTERNATING" />
+              <Timeline
+                pivot="vertical"
+                direction="center"
+                tooltip={false}
+                textLimit="none"
+                className={classes.timeline}
+                timelines={items}
+              />
             </CardContent>
           </Card>
         </Container>
       </Box>
-    </>
+    </div>
   );
 };

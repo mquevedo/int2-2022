@@ -1,32 +1,28 @@
+import { Subtitles } from "@mui/icons-material";
+
 export const items = [
   {
-    title: "2013 / 2014",
-    cardTitle: "Seattle, Washington",
-    cardSubtitle: "1st cohort USA",
+    sub: "2013 / 2014",
+    title: "1st cohort USA",
   },
   {
-    title: "2015",
-    cardTitle: "Seattle, Washington",
-    cardSubtitle: "2nd cohort USA",
+    sub: "2015",
+    title: "2nd cohort USA",
   },
   {
-    title: "2016",
-    cardTitle: "Seattle, Washington",
-    cardSubtitle: "3rd cohort USA",
+    sub: "2016",
+    title: "3rd cohort USA",
   },
   {
-    title: "2017",
-    cardTitle: "Seattle, Washington & Germany",
-    cardSubtitle: "4th cohort USA & 1st cohort Germany",
+    sub: "2017",
+    title: `4th cohort USA & \n 1st cohort Germany`,
   },
   {
-    title: "2018",
-    cardTitle: "Seattle, Washington",
-    cardSubtitle: "5th cohort USA",
+    sub: "2018",
+    title: "5th cohort USA",
   },
   {
-    title: "2019",
-    cardTitle: "Seattle, Washington",
-    cardSubtitle: "6th cohort USA",
+    sub: "2019",
+    title: "6th cohort USA",
   },
 ];

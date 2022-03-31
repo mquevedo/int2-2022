@@ -1,87 +1,71 @@
 import AlumniCarlos from "../../assets/alumni_3.png";
 import AlumniJuan from "../../assets/alumni_1.png";
-import AlumniStanley from "../../assets/alumni_2.png";
+import AlumniStanley from "../../assets/alumni_stanley.png";
 import AlumniScarlett from "../../assets/alumni_4.png";
+import AlumniRene from "../../assets/alumni_rene.jpg";
+import AlumniAriel from "../../assets/alumni_ariel.jpg";
+import AlumniCarlosRecinos from "../../assets/alumni_carlos.jpg";
+import AlumniJosueGarcia from "../../assets/alumni_josue.jpg";
+import AlumniVanessa from "../../assets/alumni_vanessa.jpg";
+import AlumniEduardo from "../../assets/alumni_eduardo.png";
+import AlumniWilliam from "../../assets/alumni_william.jpg";
+import AlumniReneMartinez from "../../assets/alumni_rene_martinez.png";
 
 export const members = [
   {
+    name: "René García",
+    cohort: "UDB, Cohort 2",
+    image: AlumniRene,
+  },
+  {
     name: "Carlos Alvarado",
-    cohort: "2016 cohort",
+    cohort: "UFG, Cohort 3",
     image: AlumniCarlos,
   },
   {
     name: "Juan Moreno",
-    cohort: "2016 cohort",
+    cohort: "UFG, Cohort 3",
     image: AlumniJuan,
   },
   {
     name: "Stanley Jovel",
-    cohort: "2016 cohort",
+    cohort: "UDB, Cohort 4",
     image: AlumniStanley,
   },
   {
-    name: "Scarlett Tejada",
-    cohort: "2016 cohort",
-    image: AlumniScarlett,
+    name: "Eduardo Chavez",
+    cohort: "UDB, Cohort 5",
+    image: AlumniEduardo,
   },
   {
-    name: "Carlos Alvarado",
-    cohort: "2016 cohort",
-    image: AlumniCarlos,
+    name: "René Martínez",
+    cohort: "UCA, Cohort 5",
+    image: AlumniReneMartinez,
   },
   {
-    name: "Juan Moreno",
-    cohort: "2016 cohort",
-    image: AlumniJuan,
+    name: "William Martínez",
+    cohort: "ITCA, Cohort 5",
+    image: AlumniWilliam,
   },
   {
-    name: "Stanley Jovel",
-    cohort: "2016 cohort",
-    image: AlumniStanley,
+    name: "Carlos Recinos",
+    cohort: "ITCA, Cohort 6",
+    image: AlumniCarlosRecinos,
   },
   {
-    name: "Scarlett Tejada",
-    cohort: "2016 cohort",
-    image: AlumniScarlett,
+    name: "Ariel Ramirez",
+    cohort: "UDB, Cohort 7",
+    image: AlumniAriel,
   },
   {
-    name: "Carlos Alvarado",
-    cohort: "2016 cohort",
-    image: AlumniCarlos,
+    name: "Josué García",
+    cohort: "ITCA, Cohort 7",
+    image: AlumniJosueGarcia,
   },
   {
-    name: "Juan Moreno",
-    cohort: "2016 cohort",
-    image: AlumniJuan,
+    name: "Vanessa Nuñez",
+    cohort: "UES, Cohort 7",
+    image: AlumniVanessa,
   },
-  {
-    name: "Stanley Jovel",
-    cohort: "2016 cohort",
-    image: AlumniStanley,
-  },
-  {
-    name: "Scarlett Tejada",
-    cohort: "2016 cohort",
-    image: AlumniScarlett,
-  },
-  {
-    name: "Carlos Alvarado",
-    cohort: "2016 cohort",
-    image: AlumniCarlos,
-  },
-  {
-    name: "Juan Moreno",
-    cohort: "2016 cohort",
-    image: AlumniJuan,
-  },
-  {
-    name: "Stanley Jovel",
-    cohort: "2016 cohort",
-    image: AlumniStanley,
-  },
-  {
-    name: "Scarlett Tejada",
-    cohort: "2016 cohort",
-    image: AlumniScarlett,
-  },
+  
 ];

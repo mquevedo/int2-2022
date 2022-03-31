@@ -5,7 +5,6 @@ import {
   Box,
   Toolbar,
   IconButton,
-  Typography,
   Menu,
   Container,
   Button,
@@ -15,8 +14,28 @@ import Int2Logo from "../../assets/int2-logo.png";
 
 import MenuIcon from "@mui/icons-material/Menu";
 
-const pages = ["Our Story", "Alumni", "Life", "Partners", "Coming Back"];
-
+const pages = [
+  {
+    name: "Be Int2",
+    link: "#beint2",
+  },
+  {
+    name: "Our Story",
+    link: "#ourStory",
+  },
+  {
+    name: "Alumni",
+    link: "#alumni",
+  },
+  {
+    name: "The Experience",
+    link: "#apply",
+  },
+  {
+    name: "Internships",
+    link: "#internships",
+  },
+];
 export const Navbar = () => {
   const [anchorElNav, setAnchorElNav] = useState(null);
 
@@ -29,7 +48,7 @@ export const Navbar = () => {
   };
 
   return (
-    <AppBar position="static" color="transparent">
+    <AppBar sx={{ background: "white" }} position="sticky" color="transparent">
       <Container maxWidth="xl" sx={{ marginBottom: 1 }}>
         <Toolbar disableGutters>
           <Box sx={{ flexGrow: 6, display: { xs: "none", md: "flex" } }}>
@@ -50,16 +69,18 @@ export const Navbar = () => {
               gap: "3em",
             }}
           >
-            {pages.map((page) => (
+            {pages.map((page, index) => (
               <Button
-                key={page}
-                onClick={handleCloseNavMenu}
+                key={index}
+                href={page.link}
+                target="_self"
+                rel="noreferrer"
                 sx={{ my: 2, color: "black", display: "block" }}
               >
-                {page}
+                {page.name}
               </Button>
             ))}
-            <Button
+            {/* <Button
               onClick={handleCloseNavMenu}
               sx={{
                 my: 2,
@@ -71,7 +92,7 @@ export const Navbar = () => {
               }}
             >
               Info
-            </Button>
+            </Button> */}
           </Box>
 
           <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
@@ -113,9 +134,17 @@ export const Navbar = () => {
                 display: { xs: "block", md: "none" },
               }}
             >
-              {pages.map((page) => (
-                <MenuItem key={page} onClick={handleCloseNavMenu}>
-                  <Typography textAlign="center">{page}</Typography>
+              {pages.map((page, index) => (
+                <MenuItem key={index} onClick={handleCloseNavMenu}>
+                  <Button
+                    key={index}
+                    href={page.link}
+                    target="_self"
+                    rel="noreferrer"
+                    sx={{ color: "black", display: "block" }}
+                  >
+                    {page.name}
+                  </Button>
                 </MenuItem>
               ))}
             </Menu>

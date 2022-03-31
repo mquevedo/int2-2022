@@ -1,0 +1,3 @@
+.react-timeline--horizontal .react-timeline__event+.react-timeline__event{
+    max-width: 8vw;
+  }
