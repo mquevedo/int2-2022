@@ -4,7 +4,6 @@ import { makeStyles } from "@material-ui/core";
 
 import KorinverLogo from "../../assets/korinver-logo.png";
 import GenUILogo from "../../assets/genui-logo.png";
-import IbesLogo from "../../assets/ibes-logo.png";
 import EmbassyLogo from "../../assets/embassy-logo.png";
 import EducationUSALogo from "../../assets/educationUSA-logo.png";
 import SaspLogo from "../../assets/sasp-logo.png";

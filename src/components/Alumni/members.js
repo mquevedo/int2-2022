@@ -1,7 +1,6 @@
 import AlumniCarlos from "../../assets/alumni_3.png";
 import AlumniJuan from "../../assets/alumni_1.png";
 import AlumniStanley from "../../assets/alumni_stanley.png";
-import AlumniScarlett from "../../assets/alumni_4.png";
 import AlumniRene from "../../assets/alumni_rene.jpg";
 import AlumniAriel from "../../assets/alumni_ariel.jpg";
 import AlumniCarlosRecinos from "../../assets/alumni_carlos.jpg";

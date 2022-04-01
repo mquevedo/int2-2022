@@ -1,5 +1,3 @@
-import { Subtitles } from "@mui/icons-material";
-
 export const items = [
   {
     sub: "2013 / 2014",

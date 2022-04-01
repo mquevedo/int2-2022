@@ -1,33 +1,13 @@
-import { useState } from "react";
-import Timeline from '@mui/lab/Timeline';
-import TimelineItem from '@mui/lab/TimelineItem';
-import TimelineSeparator from '@mui/lab/TimelineSeparator';
-import TimelineConnector from '@mui/lab/TimelineConnector';
-import TimelineContent from '@mui/lab/TimelineContent';
-import TimelineDot from '@mui/lab/TimelineDot';
 import {
   Box,
   Stepper,
   Step,
   StepLabel,
-  Button,
-  StepContent,
-  Typography,
 } from "@mui/material";
 
 import { steps } from "./steps";
 
 export const CustomStepper = () => {
-  const [activeStep, setActiveStep] = useState(0);
-
-  const handleNext = () => {
-    setActiveStep((prevActiveStep) => prevActiveStep + 1);
-  };
-
-  const handleBack = () => {
-    setActiveStep((prevActiveStep) => prevActiveStep - 1);
-  };
-
   return (
     <Box sx={{  maxWidth: 900, justifyContent: "center",
     position: "relative", flexDirection: 'row', }}>
