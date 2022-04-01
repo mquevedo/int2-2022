@@ -127,7 +127,7 @@ export const Footer = () => {
             Santa Tecla, La Libertad, El Salvador
           </Typography>
           <Typography className={classes.addressText}>
-            +(503) 2252-0014
+            info@korinver.com
           </Typography>
         </Grid>
 
@@ -140,7 +140,7 @@ export const Footer = () => {
             Seattle WA 98103, USA
           </Typography>
           <Typography className={classes.addressText}>
-            +1-(2O6) 539-0034
+            info@korinver.com
           </Typography>
         </Grid>
       </Grid>

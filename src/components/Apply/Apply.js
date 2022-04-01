@@ -94,8 +94,8 @@ export const Apply = () => {
         </Typography>
         <Typography className={classes.subText}>
           Opportunities will be published in Social Media. Like our pages to get
-          timely information In there you will find instructions on how and when
-          to apply
+          timely information. In there you will find instructions on how and when
+          to apply.
         </Typography>
       </Grid>
       <Grid className={classes.socialContainer}>

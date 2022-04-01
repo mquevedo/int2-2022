@@ -74,7 +74,7 @@ export const Internships = () => {
           <Button onClick={() =>
             (window.location.href = "https://www.facebook.com/korinver")
           }  className={classes.button } >
-            Ask to get More Information
+            Ask for More Information
           </Button>
         </CardContent>
       </Card>
