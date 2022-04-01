@@ -156,7 +156,7 @@ export const Footer = () => {
         }}
       >
         <Typography sx={{ color: "white" }}>
-          © 2021 Korinver. All rights reserved
+          © 2022 Korinver. All rights reserved
         </Typography>
       </Grid>
     </Box>
