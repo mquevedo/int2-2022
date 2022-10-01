@@ -1,0 +1,31 @@
+{
+  "files": {
+    "main.css": "/int2-2022/static/css/main.c379a741.css",
+    "main.js": "/int2-2022/static/js/main.2f021667.js",
+    "static/js/787.c48b8d23.chunk.js": "/int2-2022/static/js/787.c48b8d23.chunk.js",
+    "static/media/alumni_eduardo.png": "/int2-2022/static/media/alumni_eduardo.96334f10e82215a9bf31.png",
+    "static/media/alumni_vanessa.jpg": "/int2-2022/static/media/alumni_vanessa.98f8c18658d6baa921c5.jpg",
+    "static/media/alumni_ariel.jpg": "/int2-2022/static/media/alumni_ariel.a708ee35f46ec6152b5f.jpg",
+    "static/media/alumni_carlos.jpg": "/int2-2022/static/media/alumni_carlos.e1667387e5c9255b4da2.jpg",
+    "static/media/alumni_rene_martinez.png": "/int2-2022/static/media/alumni_rene_martinez.75312b732a6c3adb97f2.png",
+    "static/media/alumni_rene.jpg": "/int2-2022/static/media/alumni_rene.887a5b70f603dc4db6ac.jpg",
+    "static/media/alumni_3.png": "/int2-2022/static/media/alumni_3.c507be6c10b6c90d6eab.png",
+    "static/media/alumni_1.png": "/int2-2022/static/media/alumni_1.ba8ce6aa29485784be72.png",
+    "static/media/alumni_william.jpg": "/int2-2022/static/media/alumni_william.3ab71638c7018ff19e45.jpg",
+    "static/media/alumni_josue.jpg": "/int2-2022/static/media/alumni_josue.26214de48551e630ca29.jpg",
+    "static/media/bg-internship.jpg": "/int2-2022/static/media/bg-internship.fd2c84784ed94c8dc342.jpg",
+    "static/media/alumni_stanley.png": "/int2-2022/static/media/alumni_stanley.57b7625c0fe0d871a855.png",
+    "static/media/bg-beint2.png": "/int2-2022/static/media/bg-beint2.d9e3e4ca54cc6b92ddb9.png",
+    "static/media/sasp-logo.png": "/int2-2022/static/media/sasp-logo.9294d71dea98a57f5f0d.png",
+    "static/media/educationUSA-logo.png": "/int2-2022/static/media/educationUSA-logo.ecf4834716d72c6f1117.png",
+    "static/media/embassy-logo.png": "/int2-2022/static/media/embassy-logo.233b511058f1f175d841.png",
+    "index.html": "/int2-2022/index.html",
+    "main.c379a741.css.map": "/int2-2022/static/css/main.c379a741.css.map",
+    "main.2f021667.js.map": "/int2-2022/static/js/main.2f021667.js.map",
+    "787.c48b8d23.chunk.js.map": "/int2-2022/static/js/787.c48b8d23.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c379a741.css",
+    "static/js/main.2f021667.js"
+  ]
+}
