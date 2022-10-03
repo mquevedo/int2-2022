@@ -89,22 +89,22 @@ export const Footer = () => {
       </Grid>
 
       <Grid
-        sx={{ width: "50% !important", marginBottom: "2em" }}
+        sx={{ width: "50% !important", marginBottom: "2em", height: "15vw", alignContent: 'center' }}
         container
-        spacing={{ xs: 2, md: 6 }}
-        columns={{ xs: 4, sm: 6, md: 12 }}
-        rowSpacing={4}
+        spacing={{ xs: 2, md: 2 }}
+        columns={{ xs: 4, sm: 6, md: 3 }}
+        rowSpacing={1}
       >
-        <Grid item xs={4} sm={3} md={4}>
-          <Item image={EmbassyLogo} />
+        <Grid item xs={4} sm={3} md={1} >
+          <Item image={EmbassyLogo} sx={{ width: "fill-available", objectFit: 'cover', height: "12vw" }} />
         </Grid>
 
-        <Grid item xs={4} sm={3} md={4}>
-          <Item image={EducationUSALogo} />
+        <Grid item xs={4} sm={3} md={1} sx={{ marginTop: "2vw" }}>
+          <Item image={EducationUSALogo} sx={{ width: "100%", paddingTop: '4vw' }} />
         </Grid>
 
-        <Grid item xs={4} sm={3} md={4}>
-          <Item image={SaspLogo} />
+        <Grid item xs={4} sm={3} md={1} sx={{ marginTop: "2vw" }}>
+          <Item image={SaspLogo} sx={{ width: "100%", paddingTop: '4vw' }} />
         </Grid>
       </Grid>
 
@@ -158,6 +158,6 @@ export const Footer = () => {
           © 2022 Korinver. All rights reserved
         </Typography>
       </Grid>
-    </Box>
+    </Box >
   );
 };
