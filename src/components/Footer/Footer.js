@@ -89,22 +89,22 @@ export const Footer = () => {
       </Grid>
 
       <Grid
-        sx={{ width: "50% !important", marginBottom: "2em", height: "15vw", alignContent: 'center' }}
+        sx={{ width: "50% !important", marginBottom: "2em", height: "55vh", alignContent: 'center' }}
         container
-        spacing={{ xs: 2, md: 2 }}
-        columns={{ xs: 4, sm: 6, md: 3 }}
+        spacing={{ xs: 2, md: 3 }}
+        columns={{ xs: 4, sm: 1, md: 3 }}
         rowSpacing={1}
       >
-        <Grid item xs={4} sm={3} md={1} >
-          <Item image={EmbassyLogo} sx={{ width: "fill-available", objectFit: 'cover', height: "12vw" }} />
+        <Grid item xs={4} sm={1} md={1} >
+          <Item image={EmbassyLogo} sx={{ width: "100%", objectFit: 'cover', height: "25vh" }} />
         </Grid>
 
-        <Grid item xs={4} sm={3} md={1} sx={{ marginTop: "2vw" }}>
-          <Item image={EducationUSALogo} sx={{ width: "100%", paddingTop: '4vw' }} />
+        <Grid item xs={4} sm={1} md={1} sx={{ marginTop: "2vw", height: '12vh' }}>
+          <Item image={EducationUSALogo} sx={{ width: "100%", paddingTop: '4vw', paddingY: '1vh', height: '10vh' }} />
         </Grid>
 
-        <Grid item xs={4} sm={3} md={1} sx={{ marginTop: "2vw" }}>
-          <Item image={SaspLogo} sx={{ width: "100%", paddingTop: '4vw' }} />
+        <Grid item xs={4} sm={1} md={1} sx={{ marginTop: "2vw" }}>
+          <Item image={SaspLogo} sx={{ width: "100%", paddingTop: '4vw', paddingY: '1vh', height: '10vh' }} />
         </Grid>
       </Grid>
 
